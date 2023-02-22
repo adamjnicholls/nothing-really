@@ -33,7 +33,7 @@ function App() {
       </header>
       <div>
         {wantedlist && wantedlist.length > 0 && wantedlist.map((listObj, index) => (
-            <div key={listObj.uid}><h2>{listObj.title}</h2><p>{listObj.details}</p></div>
+            <div key={listObj.uid}><h2>{listObj.title}</h2><div>{listObj.details}</div></div>
           ))}
       </div>
     </div>
