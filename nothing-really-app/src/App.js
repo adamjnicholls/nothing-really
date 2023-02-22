@@ -31,11 +31,11 @@ function App() {
           Learn React now
         </a>
       </header>
-      <ul>
+      <div>
         {wantedlist && wantedlist.length > 0 && wantedlist.map((listObj, index) => (
-            <li key={listObj.uid}>{listObj.title}</li>
+            <div key={listObj.uid}><h2>{listObj.title}</h2><p>{listObj.details}</p></div>
           ))}
-      </ul>
+      </div>
     </div>
   );
 }
